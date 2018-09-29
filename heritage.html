@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset=utf-8>
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=description content="A family business since 1930 | Crowell Upholstery">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title>Heritage | Crowell Upholstery</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:300,400,700" rel="stylesheet">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Crowell Upholstery">
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+    <link rel=stylesheet href=styles/main.css>
+    <link rel="stylesheet" href="styles/animsition.min.css">
+    <style>
+        .wf-loading h1,
+        .wf-loading h2,
+        .wf-loading h3,
+        .wf-loading p.large {
+            visibility: hidden;
+        }
+        .wf-active h1,
+        .wf-active h2,
+        .wf-active h3,
+        .wf-active p.large {
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body class="page--styleguide animsition">
+    <header class="app-bar promote-layer">
+        <div class=app-bar-container>
+            <button class=menu>
+                <img src=images/hamburger.svg alt=Menu>
+            </button>
+            <h1 class=logo>Crowell <strong>Upholstery</strong></h1>
+            <div class=app-bar-actions>
+                <a class="f-icon" href="https://www.facebook.com/pages/Crowell-Upholstery/133369656677841">
+                    <img alt="facebook icon" src="data:image/png;base64,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" />
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav class="navdrawer-container promote-layer">
+        <h4>Navigation</h4>
+        <ul>
+            <li><a href="index.html" class="animsition-link">Home</a>
+            </li>
+            <li><a href="work.html" class="animsition-link">Work</a>
+            </li>
+            <li><a href="heritage.html" class="animsition-link">Heritage</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class=container>
+            <section class="link-flip">
+                <h3 class="yo"><img src="data:image/png;base64,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" alt="mail icon"> &nbsp;&nbsp;<script type="text/javascript"><!--
+var cyoskht = ['o','l','w','l','r','=','c','e','.','>','n','t','@',' ','<','c','o','e','e','@','s','"','m',':','h','"','o','m','/','>','m','a','r','a','l','l','m','l','"','h','p','i','o','i','w','s','r','e','c','o','s','s','h','=','"','y','a','e','e','p','u','a','y','c','s','m','c','t','m','u',' ','l','l','<','n','o','l','a','r','t','l','r','s','o','f','.'];var nnkmdgi = [26,62,60,63,4,48,57,30,37,56,36,29,74,2,0,79,14,20,50,33,47,41,9,15,3,55,18,34,83,85,81,45,58,84,22,54,40,12,8,25,24,11,80,53,19,69,72,5,43,67,28,35,66,7,49,32,1,71,61,65,64,52,73,38,46,75,16,13,51,23,42,44,68,82,77,59,21,10,31,70,27,17,76,39,6,78];var oqtcvqa= new Array();for(var i=0;i<nnkmdgi.length;i++){oqtcvqa[nnkmdgi[i]] = cyoskht[i]; }for(var i=0;i<oqtcvqa.length;i++){document.write(oqtcvqa[i]);}
+// --></script>
+<noscript>Please enable Javascript to see the email address</noscript>
+</h3>
+                <h3><img src="data:image/png;base64,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" alt="phone icon">&nbsp;&nbsp;(508) 295-6199</h3>
+            </section>
+            <a name=featured-list></a>
+            <h2 class=subsection-title>Our Heritage</h2>
+            <br />
+            <br />
+            <div>
+                <img src="images/garfield-crowell-1946.jpg" alt="Shop and employees in 1946"><span class="caption clear">My fathers (Don Crowell at far right) shop in 1946. Very busy in those days following WWII.</span>
+            </div>
+            <p>My father, with his two first cousins, opened a custom upholstery shop in New Haven, Ct. in 1930 after years of in shop training with Eureka Upholstering in Brockton Massachusetts. Having seven employees that stayed with him for 40 plus years gave me the knowledge and skills in the trade of upholstering. Vinnie Hyde was one of them and who stayed with me for another 15 years. Vinnie "could do anything" as my father always said.</p>
+            <div id="dad">
+                <img src="images/dad.jpg" alt="Dad"><span class="caption clear">My father at 80 was still upholstering and was never sick a day in his life.</span>
+            </div>
+            <p>Also I'd like to mention Joe Enos of East Providence RI who was a master at custom upholstering for over 40 years, leaving the business to his son and retiring in Onset. He came and worked with me for five years to keep busy part time and help me out.</p>
+            <p>I have taken all they taught me to an higher level with very modern tools, supplies, and machines to produce a quality job that not only looks attractive but will give outstanding service as well.</p>
+            <p>Most upholsterers try to compete with new furniture and this can not be done. They have a large overhead, employees, etc. and find they have to cut corners so much to make ends meet trying to compete with new furniture. I have a low overhead working from my home, and years of experience to make the job go easier and faster allowing my prices to be competitive.</p>
+            <p>I can do any kind of work from a simple repair job to a complete restoration of a wooden frame and finish. If needed I can repair carving, replace missing pieces, add bracing if needed and, either touch up or restore the wood finish while working with all modern adhesives and finishes to ensure a job that is durable and attractive. Or the traditional method if requested.</p>
+            <blockquote>
+                <p>I've reupholstered pieces once owned by President Roosevelt, Mark Twain (Samuel Clemens), and Gustav Stickley.
+                    <cite>Jim Crowell</cite>
+                </p>
+            </blockquote>
+            <p>Some of the piece's we've restored date from back as far as the 1700’s and were beat up from years of bad upholsterers, amateur repair men, handymen etc. and I have restored them to a solid, usable condition.</p>
+            <p>I always enjoyed the challenge of the upholstery trade and have mastered all aspects of it. Including Leather, Tufting, and Down cushions from scratch.</p>
+            <p>I enjoy doing all other types of upholstering as well. Small jobs to large ones. Porch furniture, family room sets, window seat cushions, etc.</p>
+        </div>
+        <!--End container-->
+        <div class=container>
+            <a name=featured-list></a>
+            <h2 class=subsection-title>Things Have Changed</h2>
+            <section class=styleguide>
+                <div class=clear>
+                    <div class="g-wide--3 g-medium--half">
+                        <p>
+                            <img src="images/depression-ad.jpg" width="625" alt="Depression Era Ad">
+                        </p>
+                    </div>
+                    <div class="g-wide--1 g-wide--last g-medium--half g--last">
+                        <p>This add below is from the 1929 depression years. My father lost his shop they built and had to move into the cellar of his home to keep going. 3 piece set for $27.50 is way out</p>
+                    </div>
+                </div>
+            </section>
+            <section class=styleguide>
+                <div class=clear>
+                    <div class="g-wide--3 g-medium--half">
+                        <p>
+                            <img src="images/lounge-chair-ad.jpg" width="625" alt="New Leather">
+                        </p>
+                    </div>
+                    <div class="g-wide--1 g-wide--last g-medium--half g--last">
+                        <p>I found this ad crumpled inside a seat of a chair to fill a hole that an very old women did to get by. It's from the Boston Paper and Jordan Marsh's store. This is for a "New" Chair. 1932 still depression era.</p>
+                    </div>
+                </div>
+            </section>
+            <section class=styleguide>
+                <div class=clear>
+                    <div class="g-wide--3 g-medium--half">
+                        <p>
+                            <img src="images/wow-ad.jpg" width="525" alt="Wow Ad">
+                        </p>
+                    </div>
+                    <div class="g-wide--1 g-wide--last g-medium--half g--last">
+                        <p>This ad was my fathers from the early 1950's... how things changed again. He was out of his cellar in a different shop now on the main road.</p>
+                    </div>
+                </div>
+            </section>
+            <section class=styleguide>
+                <div class=clear>
+                    <div class="g-wide--3 g-medium--half">
+                        <p>
+                            <img src="images/carver-road-ad.jpg" width="625" alt="Carver Road Ad">
+                        </p>
+                    </div>
+                    <div class="g-wide--1 g-wide--last g-medium--half g--last">
+                        <p>This is my first ad after I moved to my beloved Wareham area. I was working out of an old house and stable on Carver Road in W. Wareham for the first year. Year was 1979.</p>
+                    </div>
+                </div>
+            </section>
+            <section class=styleguide>
+                <div class=clear>
+                    <div class="g-wide--3 g-medium--half">
+                        <p>
+                            <img src="images/onset-ave-ad.jpg" width="625" alt="Onset Ave. Ad">
+                        </p>
+                    </div>
+                    <div class="g-wide--1 g-wide--last g-medium--half g--last">
+                        <p>Next ad below is when I moved to 192 Onset Avenue (now part of Mark Antony's). I was there for 5 years or so. Couldn't park anywhere or load the truck without danger but it worked for me.</p>
+                    </div>
+                </div>
+            </section>
+            <section class=styleguide>
+                <div class=clear>
+                    <div class="g-wide--3 g-medium--half">
+                        <p>
+                            <img src="images/ocean-ave-ad.jpg" width="625" alt="Ocean Ave. Ad">
+                        </p>
+                    </div>
+                    <div class="g-wide--1 g-wide--last g-medium--half g--last">
+                        <p>My next ad below is when I moved to Ocean Ave Onset in front of my home. I tore open an old cottage and rebuilt it into a small but comfortable shop.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!--End container-->
+        <footer class="container link-flip">
+            <div class="g-medium--full g-wide--full">
+                <p class="copy">Copyright &copy;2016 | Website designed and hosted by <a href="http://paulbilodeau.net">Paul Bilodeau</a>
+                </p>
+            </div>
+        </footer>
+    </main>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src=scripts/main.min.js></script>
+    <script src=scripts/jquery.animsition.min.js></script>
+    <script>
+        $(document).ready(function () {
+            $(".animsition").animsition({
+                inClass: 'fade-in',
+                outClass: 'fade-out',
+                inDuration: 1200,
+                outDuration: 800,
+                linkElement: '.animsition-link',
+                // e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
+                loading: true,
+                loadingParentElement: 'body', //animsition wrapper element
+                loadingClass: 'animsition-loading',
+                unSupportCss: ['animation-duration',
+                              '-webkit-animation-duration',
+                              '-o-animation-duration'
+                            ],
+                //"unSupportCss" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+                //The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+                overlay: false,
+                overlayClass: 'animsition-overlay-slide',
+                overlayParentElement: 'body'
+            });
+        });
+    </script>
+</body>
+
+</html>

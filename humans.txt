@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+  Paul Bilodeau - Developer
+
+# THANKS
+
+  <name>
+
+# TECHNOLOGY COLOPHON
+
+  HTML5, CSS3, Google Web Starter Kit, Animsition (http://blivesta.github.io/animsition),
+  Inline Anchor Styles from Codrops (http://tympanus.net/codrops/?p=19205), Typekit Fonts.
